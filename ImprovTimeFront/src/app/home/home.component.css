@@ -1,3 +1,15 @@
-p{
-    color:red
+div.main{
+    /*background: blue;*/
+    border-style: solid;
+
+    
 }
+
+button{
+    background-color: greenyellow;
+    color: red;
+}
+
+
+
+

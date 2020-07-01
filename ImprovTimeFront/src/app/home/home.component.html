@@ -1,1 +1,45 @@
-<p>home works! sort of</p>
+<h1>Improv Time</h1>
+<ng-container *ngIf="!suggestion">
+    <div class='main'>
+        <div>Press button to receive an improv suggestion  </div>
+        <div>
+        
+            <button id='button1' type="button" (click)="getSuggestion()">Get Suggestion</button>
+        
+        </div>
+    </div>
+</ng-container>
+<br>
+
+<ng-container *ngIf="suggestion">
+    <div class='main'>
+        <div>Characters:
+            <ul>
+                <li>{{suggestion.character1.name}}: {{suggestion.character1.description}}</li>
+                <li>{{suggestion.character2.name}}: {{suggestion.character2.description}}</li>
+            </ul>
+        </div>
+        <div>
+            Setting:
+            <ul>
+                <li>{{suggestion.setting.name}}: {{suggestion.setting.description}}</li>
+            </ul>
+        </div>
+        <div>
+            Scenario:
+            <ul>
+                <li>{{suggestion.scenario.name}}: {{suggestion.scenario.description}}</li>
+            </ul>
+        </div>
+        
+    </div>
+    <br>
+    <br>
+    <div class='main'>
+
+        <button id='button2' type="button" (click)="getSuggestion()">New Suggestion</button>
+    </div>
+
+
+</ng-container>
+
