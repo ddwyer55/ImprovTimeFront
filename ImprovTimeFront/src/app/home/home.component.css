@@ -1,8 +1,8 @@
-div.main{
-    /*background: blue;*/
+#main1{
+    background: lightslategray;
     border-style: solid;
-
-    
+    text-align: center;
+    max-width: 60%;
 }
 
 button{
@@ -10,6 +10,18 @@ button{
     color: red;
 }
 
+#main2{
+    max-width: 60%;
+    background: lightslategray;
+    border-style: solid;
+}
 
+h1{
+    text-align: center;
+}
 
-
+#outer{
+    
+    margin-left: 37%;
+    margin-right: 20%
+}
